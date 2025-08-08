@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fall Plants Guide</title>
+  <link rel="manifest" href="manifest.json" />
+  <style>
+    body { font-family: Arial, sans-serif; margin: 10px; font-size: 18px; line-height: 1.6; }
+    h1, h2 { font-size: 22px; margin-top: 20px; }
+    table { width: 100%; border-collapse: collapse; overflow-x: auto; display: block; }
+    th, td { border: 1px solid #ccc; padding: 10px; text-align: center; }
+    th { background-color: #dfefff; }
+    img { max-width: 80px; height: auto; }
+    select { font-size: 18px; padding: 10px; width: 100%; margin: 10px 0 20px; }
+    .section { display: none; }
+    .visible { display: block; }
+  </style>
+</head>
+<body>
+  <h1>🌼 Fall Plants for Prescott Valley (Zone 7a)</h1>
+  <label for="sectionSelect"><strong>View:</strong></label>
+  <select id="sectionSelect" onchange="showSection(this.value)">
+    <option value="flowers">🌸 Fall Flowers</option>
+    <option value="care">🛠️ Maintenance Guide</option>
+  </select>
+
+  <div id="flowers" class="section visible">
+    <h2>✅ Full Sun, Pest- & Disease-Resistant</h2>
+    <table>
+      <tr><th>Plant</th><th>Image</th><th>Full Sun?</th><th>Zone 7a Hardy?</th><th>Resistance</th><th>Notes</th></tr>
+      <tr><td>Sedum (Autumn Joy)</td><td><img src="https://tse3.mm.bing.net/th/id/OIP.lgOX99JnhEu97skVzeIg9gHaE5?pid=Api"></td><td>✅</td><td>✅</td><td>✅ Drought, pest</td><td>Succulent; thrives in dry soil</td></tr>
+      <tr><td>Blanket Flower</td><td><img src="https://tse3.mm.bing.net/th/id/OIP.ahVTprl2Y50ndDyMNDDYkAHaE8?pid=Api"></td><td>✅</td><td>✅</td><td>✅ Deer, rabbit</td><td>Native-like; long bloom</td></tr>
+      <tr><td>Grace N' Grit Rose</td><td><img src="https://tse2.mm.bing.net/th/id/OIP.lZYaf3Uppv45nVZLT5VbUgHaLH?pid=Api"></td><td>✅</td><td>✅</td><td>✅ Disease resistant</td><td>Heat-resistant shrub rose</td></tr>
+      <tr><td>Rudbeckia</td><td><img src="https://tse4.mm.bing.net/th/id/OIP.NBapnvFgwFmVfv_XKOijJgHaHa?pid=Api"></td><td>✅</td><td>✅</td><td>✅ Deer, pest</td><td>Golden flower with black cone</td></tr>
+      <tr><td>Queen Sophia Marigold</td><td><img src="https://tse2.mm.bing.net/th/id/OIP.RhWBTEdBMphb4Jfb1299TQHaHa?pid=Api"></td><td>✅</td><td>✅</td><td>✅ Insect repelling</td><td>Compact, borders well</td></tr>
+      <tr><td>Chrysanthemum</td><td><img src="https://tse2.mm.bing.net/th/id/OIP.HDdSaBB7wbd7rkKfydSuxgAAAA?pid=Api"></td><td>✅</td><td>✅</td><td>⚠️ Fungal risk</td><td>Needs airflow; excellent fall color</td></tr>
+    </table>
+
+    <h2>⚠️ Partial Resistance or Special Needs</h2>
+    <table>
+      <tr><th>Plant</th><th>Image</th><th>Sun Needs</th><th>Zone 7a?</th><th>Resistance</th><th>Notes</th></tr>
+      <tr><td>Coral Bells</td><td><img src="https://tse3.mm.bing.net/th/id/OIP.LOmO-sy2sNviCklTgyt9jgHaE8?pid=Api"></td><td>⚠️ Morning sun only</td><td>✅</td><td>⚠️ Moderate</td><td>Prefers shade; mulch base</td></tr>
+      <tr><td>Asters</td><td><img src="https://tse3.mm.bing.net/th/id/OIP.q7sasfnOiV8sM3_pccFZRQHaE8?pid=Api"></td><td>⚠️ Needs airflow</td><td>✅</td><td>⚠️ May mildew</td><td>Cooler temps preferred</td></tr>
+      <tr><td>Sweet Alyssum</td><td><img src="https://tse4.mm.bing.net/th/id/OIP.gLH92h3g5v35nmaO3RBuDwHaE8?pid=Api"></td><td>⚠️ Part shade</td><td>✅</td><td>⚠️ Aphid-prone</td><td>Fall borders; fragrant</td></tr>
+    </table>
+  </div>
+
+  <div id="care" class="section">
+    <h2>🛠️ Fall Maintenance Guide</h2>
+    <table>
+      <tr><th>Plant</th><th>Watering</th><th>Feeding</th><th>Pruning</th><th>Extra Tips</th></tr>
+      <tr><td>Sedum</td><td>10–14 days</td><td>None</td><td>Cut to ground late fall</td><td>Poor soil preferred</td></tr>
+      <tr><td>Blanket Flower</td><td>Weekly</td><td>Low-N bloom boost</td><td>Deadhead</td><td>Self-seeds</td></tr>
+      <tr><td>Grace Rose</td><td>Weekly, deep</td><td>Rose food once</td><td>Shape only</td><td>Mulch in winter</td></tr>
+      <tr><td>Rudbeckia</td><td>Weekly</td><td>Compost</td><td>Deadhead, cut frost</td><td>Pollinator friendly</td></tr>
+      <tr><td>Marigold</td><td>2x/week</td><td>Not needed</td><td>Deadhead</td><td>Frost protect</td></tr>
+      <tr><td>Chrysanthemum</td><td>2x/week</td><td>Potassium feed</td><td>Pinch to Aug</td><td>Airflow important</td></tr>
+      <tr><td>Coral Bells</td><td>Weekly</td><td>Compost</td><td>Trim leaves</td><td>Don’t bury crown</td></tr>
+      <tr><td>Asters</td><td>2x/week</td><td>Bone meal</td><td>Cut after frost</td><td>Needs spacing</td></tr>
+      <tr><td>Alyssum</td><td>Weekly+</td><td>None</td><td>Trim to shape</td><td>Rebloom in cool</td></tr>
+    </table>
+  </div>
+
+  <script>
+    function showSection(value) {
+      document.getElementById('flowers').classList.remove('visible');
+      document.getElementById('care').classList.remove('visible');
+      document.getElementById(value).classList.add('visible');
+    }
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js');
+    }
+  </script>
+</body>
+</html>
